@@ -5,6 +5,13 @@
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
+    <customFonts key="customFonts">
+        <mutableArray key="Minecraft.ttf">
+            <string>Minecraft</string>
+            <string>Minecraft</string>
+            <string>Minecraft</string>
+        </mutableArray>
+    </customFonts>
     <scenes>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
@@ -64,20 +71,34 @@
                                 <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="23"/>
                                 <state key="normal" image="player2attackbtn"/>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Attack" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wdI-b9-d3L">
-                                <rect key="frame" x="464" y="296" width="50" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Attack" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4ok-IY-irQ">
                                 <rect key="frame" x="50" y="297" width="116" height="21"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="21" id="fZr-04-mAU"/>
                                     <constraint firstAttribute="width" constant="116" id="tsC-8T-qBq"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <fontDescription key="fontDescription" name="Minecraft" family="Minecraft" pointSize="22"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Attack" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gFz-B2-Vwg">
+                                <rect key="frame" x="433" y="297" width="116" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="EHv-2Z-hPU"/>
+                                    <constraint firstAttribute="width" constant="116" id="GJZ-Fd-wYB"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Minecraft" family="Minecraft" pointSize="22"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="An attack for 75 damage was super effective" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Qv4-wh-T9Y">
+                                <rect key="frame" x="50" y="564" width="499" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="HYO-NZ-eZ2"/>
+                                    <constraint firstAttribute="width" constant="499" id="yM8-cF-9R6"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Minecraft" family="Minecraft" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
@@ -89,17 +110,19 @@
                             <constraint firstItem="93d-zN-AI5" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="6Rs-aM-fXu"/>
                             <constraint firstItem="9fD-iU-DR9" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="BLK-eE-uER"/>
                             <constraint firstItem="7hF-o9-feQ" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="Eb7-y5-XaK"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="Qv4-wh-T9Y" secondAttribute="bottom" constant="15" id="FAS-kM-4tD"/>
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="cVb-Bs-axs" secondAttribute="bottom" id="FcK-QY-gnM"/>
+                            <constraint firstItem="7hF-o9-feQ" firstAttribute="leading" secondItem="gFz-B2-Vwg" secondAttribute="trailing" constant="-146" id="K6c-NJ-lUI"/>
                             <constraint firstItem="zw9-d1-igQ" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="Lvh-x1-1rd"/>
+                            <constraint firstItem="7hF-o9-feQ" firstAttribute="top" secondItem="gFz-B2-Vwg" secondAttribute="bottom" constant="-41" id="Odm-DZ-F3v"/>
                             <constraint firstItem="1va-8g-cBx" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="PNs-wW-LFf"/>
                             <constraint firstItem="rUt-Cs-ORj" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="QdY-5M-Yyv"/>
                             <constraint firstItem="zw9-d1-igQ" firstAttribute="top" secondItem="7hF-o9-feQ" secondAttribute="bottom" constant="25" id="QlB-if-Rpc"/>
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="1va-8g-cBx" secondAttribute="bottom" id="QyK-46-HwU"/>
                             <constraint firstItem="cVb-Bs-axs" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="U47-SP-jZl"/>
-                            <constraint firstItem="7hF-o9-feQ" firstAttribute="top" secondItem="wdI-b9-d3L" secondAttribute="bottom" constant="-40" id="WEE-0K-dKV"/>
+                            <constraint firstItem="Qv4-wh-T9Y" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="VpP-gD-wvC"/>
                             <constraint firstItem="93d-zN-AI5" firstAttribute="leading" secondItem="4ok-IY-irQ" secondAttribute="trailing" constant="-146" id="XRx-Js-Qpu"/>
                             <constraint firstItem="cVb-Bs-axs" firstAttribute="top" secondItem="zw9-d1-igQ" secondAttribute="bottom" constant="13" id="YwT-DN-eKf"/>
-                            <constraint firstItem="wdI-b9-d3L" firstAttribute="leading" secondItem="7hF-o9-feQ" secondAttribute="trailing" constant="-116" id="c69-9m-t9f"/>
                             <constraint firstAttribute="trailing" secondItem="1va-8g-cBx" secondAttribute="trailing" id="cgV-BA-psO"/>
                             <constraint firstItem="1va-8g-cBx" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="dFq-nb-IAy"/>
                             <constraint firstItem="93d-zN-AI5" firstAttribute="top" secondItem="4ok-IY-irQ" secondAttribute="bottom" constant="-41" id="v8E-aU-wo2"/>

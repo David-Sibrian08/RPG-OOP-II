@@ -12,6 +12,10 @@
 		5C0AC87D1D344D740008BC0B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5C0AC87B1D344D740008BC0B /* Main.storyboard */; };
 		5C0AC87F1D344D740008BC0B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5C0AC87E1D344D740008BC0B /* Assets.xcassets */; };
 		5C0AC8821D344D740008BC0B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5C0AC8801D344D740008BC0B /* LaunchScreen.storyboard */; };
+		5C9C30391D35A454001F04D3 /* Minecraft.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 5C9C30381D35A454001F04D3 /* Minecraft.ttf */; };
+		5C9C303D1D35A461001F04D3 /* attack.wav in Resources */ = {isa = PBXBuildFile; fileRef = 5C9C303A1D35A461001F04D3 /* attack.wav */; };
+		5C9C303E1D35A461001F04D3 /* death.wav in Resources */ = {isa = PBXBuildFile; fileRef = 5C9C303B1D35A461001F04D3 /* death.wav */; };
+		5C9C303F1D35A461001F04D3 /* menuMusic.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 5C9C303C1D35A461001F04D3 /* menuMusic.mp3 */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +26,10 @@
 		5C0AC87E1D344D740008BC0B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		5C0AC8811D344D740008BC0B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		5C0AC8831D344D740008BC0B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5C9C30381D35A454001F04D3 /* Minecraft.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Minecraft.ttf; sourceTree = "<group>"; };
+		5C9C303A1D35A461001F04D3 /* attack.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = attack.wav; sourceTree = "<group>"; };
+		5C9C303B1D35A461001F04D3 /* death.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = death.wav; sourceTree = "<group>"; };
+		5C9C303C1D35A461001F04D3 /* menuMusic.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = menuMusic.mp3; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +62,10 @@
 		5C0AC8761D344D730008BC0B /* RPG OOP II */ = {
 			isa = PBXGroup;
 			children = (
+				5C9C303A1D35A461001F04D3 /* attack.wav */,
+				5C9C303B1D35A461001F04D3 /* death.wav */,
+				5C9C303C1D35A461001F04D3 /* menuMusic.mp3 */,
+				5C9C30381D35A454001F04D3 /* Minecraft.ttf */,
 				5C0AC8771D344D740008BC0B /* AppDelegate.swift */,
 				5C0AC8791D344D740008BC0B /* ViewController.swift */,
 				5C0AC87B1D344D740008BC0B /* Main.storyboard */,
@@ -124,8 +136,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				5C0AC8821D344D740008BC0B /* LaunchScreen.storyboard in Resources */,
+				5C9C303E1D35A461001F04D3 /* death.wav in Resources */,
 				5C0AC87F1D344D740008BC0B /* Assets.xcassets in Resources */,
+				5C9C30391D35A454001F04D3 /* Minecraft.ttf in Resources */,
+				5C9C303D1D35A461001F04D3 /* attack.wav in Resources */,
 				5C0AC87D1D344D740008BC0B /* Main.storyboard in Resources */,
+				5C9C303F1D35A461001F04D3 /* menuMusic.mp3 in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -289,6 +305,7 @@
 				5C0AC8881D344D750008BC0B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
