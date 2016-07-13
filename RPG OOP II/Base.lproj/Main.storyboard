@@ -109,23 +109,23 @@
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="100 HP" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ctq-BY-mxi">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ctq-BY-mxi">
                                 <rect key="frame" x="174" y="443" width="56" height="17"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="17" id="2T4-2D-fhc"/>
                                     <constraint firstAttribute="width" constant="56" id="syb-Ww-7dl"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" name="Minecraft" family="Minecraft" pointSize="17"/>
+                                <fontDescription key="fontDescription" name="Minecraft" family="Minecraft" pointSize="15"/>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="100 HP" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8RA-Fr-4Ei">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8RA-Fr-4Ei">
                                 <rect key="frame" x="335" y="443" width="56" height="17"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="17" id="5u9-TL-rrS"/>
                                     <constraint firstAttribute="width" constant="56" id="PRQ-f5-TbD"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" name="Minecraft" family="Minecraft" pointSize="17"/>
+                                <fontDescription key="fontDescription" name="Minecraft" family="Minecraft" pointSize="15"/>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
@@ -190,9 +190,13 @@
                     </view>
                     <connections>
                         <outlet property="attackUpdateLabel" destination="Qv4-wh-T9Y" id="Y3R-n3-wth"/>
+                        <outlet property="heroAttackButton" destination="7hF-o9-feQ" id="mYf-JD-11O"/>
                         <outlet property="heroHPLabel" destination="8RA-Fr-4Ei" id="2Kr-6g-Nc1"/>
+                        <outlet property="heroImageView" destination="zw9-d1-igQ" id="BLY-75-nxd"/>
                         <outlet property="muteButton" destination="qgS-QI-O6g" id="hYq-UF-xAQ"/>
+                        <outlet property="trollAttackButton" destination="93d-zN-AI5" id="Q2g-Mn-csG"/>
                         <outlet property="trollHPLabel" destination="Ctq-BY-mxi" id="2Ix-3J-p2f"/>
+                        <outlet property="trollImageView" destination="rUt-Cs-ORj" id="AqI-GO-rv5"/>
                         <outlet property="unmuteButton" destination="Dfj-Tp-h2f" id="i80-hO-I7e"/>
                     </connections>
                 </viewController>
