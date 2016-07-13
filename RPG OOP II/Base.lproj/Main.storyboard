@@ -10,6 +10,8 @@
             <string>Minecraft</string>
             <string>Minecraft</string>
             <string>Minecraft</string>
+            <string>Minecraft</string>
+            <string>Minecraft</string>
         </mutableArray>
     </customFonts>
     <scenes>
@@ -54,15 +56,18 @@
                                     <constraint firstAttribute="height" constant="170" id="qLf-ku-62h"/>
                                 </constraints>
                             </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="93d-zN-AI5">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="93d-zN-AI5" userLabel="trollAttackButton">
                                 <rect key="frame" x="20" y="277" width="177" height="65"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="65" id="8e6-YJ-nOK"/>
                                     <constraint firstAttribute="width" constant="177" id="vMT-zi-Kly"/>
                                 </constraints>
                                 <state key="normal" image="player1attackbtn"/>
+                                <connections>
+                                    <action selector="trollAttackButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="kWS-Kt-k3Y"/>
+                                </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7hF-o9-feQ">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7hF-o9-feQ" userLabel="heroAttackButton">
                                 <rect key="frame" x="403" y="277" width="177" height="65"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="177" id="4de-OH-yK4"/>
@@ -70,8 +75,11 @@
                                 </constraints>
                                 <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="23"/>
                                 <state key="normal" image="player2attackbtn"/>
+                                <connections>
+                                    <action selector="heroAttackButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="qO8-4B-KlH"/>
+                                </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Attack" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4ok-IY-irQ">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Attack" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4ok-IY-irQ" userLabel="trollAttackLabel">
                                 <rect key="frame" x="50" y="297" width="116" height="21"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="21" id="fZr-04-mAU"/>
@@ -81,7 +89,7 @@
                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Attack" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gFz-B2-Vwg">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Attack" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gFz-B2-Vwg" userLabel="heroAttackLabel">
                                 <rect key="frame" x="433" y="297" width="116" height="21"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="21" id="EHv-2Z-hPU"/>
@@ -91,16 +99,58 @@
                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="An attack for 75 damage was super effective" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Qv4-wh-T9Y">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Troll challenges the hero!" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Qv4-wh-T9Y" userLabel="attackUpdateLabel">
                                 <rect key="frame" x="50" y="564" width="499" height="21"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="21" id="HYO-NZ-eZ2"/>
                                     <constraint firstAttribute="width" constant="499" id="yM8-cF-9R6"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" name="Minecraft" family="Minecraft" pointSize="17"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="100 HP" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ctq-BY-mxi">
+                                <rect key="frame" x="174" y="443" width="56" height="17"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="17" id="2T4-2D-fhc"/>
+                                    <constraint firstAttribute="width" constant="56" id="syb-Ww-7dl"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Minecraft" family="Minecraft" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="100 HP" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8RA-Fr-4Ei">
+                                <rect key="frame" x="335" y="443" width="56" height="17"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="17" id="5u9-TL-rrS"/>
+                                    <constraint firstAttribute="width" constant="56" id="PRQ-f5-TbD"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Minecraft" family="Minecraft" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qgS-QI-O6g" userLabel="muteButton">
+                                <rect key="frame" x="284" y="20" width="32" height="32"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="32" id="20B-vq-rsh"/>
+                                    <constraint firstAttribute="width" constant="32" id="Skx-hK-YeQ"/>
+                                </constraints>
+                                <state key="normal" image="muteButton"/>
+                                <connections>
+                                    <action selector="muteButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="mqQ-bZ-bK1"/>
+                                </connections>
+                            </button>
+                            <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Dfj-Tp-h2f" userLabel="unmuteButton">
+                                <rect key="frame" x="284" y="20" width="32" height="32"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="32" id="6gh-A2-nKA"/>
+                                    <constraint firstAttribute="height" constant="32" id="Nbh-7K-Ez5"/>
+                                </constraints>
+                                <state key="normal" image="unmute"/>
+                                <connections>
+                                    <action selector="unmuteButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="TzJ-bA-lIm"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
@@ -108,12 +158,17 @@
                             <constraint firstItem="rUt-Cs-ORj" firstAttribute="top" secondItem="93d-zN-AI5" secondAttribute="bottom" constant="25" id="4EL-4X-Z1z"/>
                             <constraint firstAttribute="trailing" secondItem="cVb-Bs-axs" secondAttribute="trailing" id="4wr-yG-Hsy"/>
                             <constraint firstItem="93d-zN-AI5" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="6Rs-aM-fXu"/>
+                            <constraint firstItem="qgS-QI-O6g" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="7El-Ii-KU4"/>
+                            <constraint firstItem="Ctq-BY-mxi" firstAttribute="leading" secondItem="rUt-Cs-ORj" secondAttribute="trailing" constant="8" id="7iN-Rx-ebi"/>
                             <constraint firstItem="9fD-iU-DR9" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="BLK-eE-uER"/>
                             <constraint firstItem="7hF-o9-feQ" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="Eb7-y5-XaK"/>
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="Qv4-wh-T9Y" secondAttribute="bottom" constant="15" id="FAS-kM-4tD"/>
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="cVb-Bs-axs" secondAttribute="bottom" id="FcK-QY-gnM"/>
+                            <constraint firstItem="cVb-Bs-axs" firstAttribute="top" secondItem="8RA-Fr-4Ei" secondAttribute="bottom" constant="90" id="HYY-G3-ns2"/>
+                            <constraint firstItem="cVb-Bs-axs" firstAttribute="top" secondItem="Ctq-BY-mxi" secondAttribute="bottom" constant="90" id="IMz-kK-563"/>
                             <constraint firstItem="7hF-o9-feQ" firstAttribute="leading" secondItem="gFz-B2-Vwg" secondAttribute="trailing" constant="-146" id="K6c-NJ-lUI"/>
                             <constraint firstItem="zw9-d1-igQ" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="Lvh-x1-1rd"/>
+                            <constraint firstItem="zw9-d1-igQ" firstAttribute="leading" secondItem="8RA-Fr-4Ei" secondAttribute="trailing" constant="8" id="OHq-45-sZi"/>
                             <constraint firstItem="7hF-o9-feQ" firstAttribute="top" secondItem="gFz-B2-Vwg" secondAttribute="bottom" constant="-41" id="Odm-DZ-F3v"/>
                             <constraint firstItem="1va-8g-cBx" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="PNs-wW-LFf"/>
                             <constraint firstItem="rUt-Cs-ORj" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="QdY-5M-Yyv"/>
@@ -125,11 +180,21 @@
                             <constraint firstItem="cVb-Bs-axs" firstAttribute="top" secondItem="zw9-d1-igQ" secondAttribute="bottom" constant="13" id="YwT-DN-eKf"/>
                             <constraint firstAttribute="trailing" secondItem="1va-8g-cBx" secondAttribute="trailing" id="cgV-BA-psO"/>
                             <constraint firstItem="1va-8g-cBx" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="dFq-nb-IAy"/>
+                            <constraint firstItem="qgS-QI-O6g" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="hAd-Fs-QFX"/>
+                            <constraint firstItem="Dfj-Tp-h2f" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="obl-59-5ux"/>
+                            <constraint firstItem="Dfj-Tp-h2f" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="rTI-uK-DSp"/>
                             <constraint firstItem="93d-zN-AI5" firstAttribute="top" secondItem="4ok-IY-irQ" secondAttribute="bottom" constant="-41" id="v8E-aU-wo2"/>
                             <constraint firstItem="9fD-iU-DR9" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="xew-h9-ZBl"/>
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="9fD-iU-DR9" secondAttribute="bottom" constant="10" id="zcF-mq-TzW"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="attackUpdateLabel" destination="Qv4-wh-T9Y" id="Y3R-n3-wth"/>
+                        <outlet property="heroHPLabel" destination="8RA-Fr-4Ei" id="2Kr-6g-Nc1"/>
+                        <outlet property="muteButton" destination="qgS-QI-O6g" id="hYq-UF-xAQ"/>
+                        <outlet property="trollHPLabel" destination="Ctq-BY-mxi" id="2Ix-3J-p2f"/>
+                        <outlet property="unmuteButton" destination="Dfj-Tp-h2f" id="i80-hO-I7e"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
@@ -140,9 +205,11 @@
         <image name="bg" width="1024" height="677"/>
         <image name="enemy" width="241" height="348"/>
         <image name="ground" width="1024" height="106"/>
+        <image name="muteButton" width="512" height="512"/>
         <image name="player" width="406" height="441"/>
         <image name="player1attackbtn" width="212" height="78"/>
         <image name="player2attackbtn" width="212" height="78"/>
         <image name="text-holder" width="696" height="106"/>
+        <image name="unmute" width="256" height="256"/>
     </resources>
 </document>
