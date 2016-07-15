@@ -74,7 +74,7 @@ class ViewController: UIViewController {
         if hero.isDead {
             deathSound.play()
             
-            attackUpdateLabel.text = "THE TROLL HAS VANQUISHED THE HERO!"
+            attackUpdateLabel.text = "THE TROLL HAS VANQUISHED \(hero.name)!"
             heroHPLabel.hidden = true
             heroImageView.alpha = 0.5
             
