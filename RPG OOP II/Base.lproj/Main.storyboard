@@ -43,21 +43,21 @@
                                 </constraints>
                             </imageView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="enemy" translatesAutoresizingMaskIntoConstraints="NO" id="rUt-Cs-ORj">
-                                <rect key="frame" x="20" y="367" width="146" height="170"/>
+                                <rect key="frame" x="20" y="375" width="146" height="170"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="170" id="NMg-iq-YYA"/>
                                     <constraint firstAttribute="width" constant="146" id="ch9-qz-ZWU"/>
                                 </constraints>
                             </imageView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="player" translatesAutoresizingMaskIntoConstraints="NO" id="zw9-d1-igQ">
-                                <rect key="frame" x="399" y="367" width="181" height="170"/>
+                                <rect key="frame" x="399" y="375" width="181" height="170"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="181" id="orn-4p-T0p"/>
                                     <constraint firstAttribute="height" constant="170" id="qLf-ku-62h"/>
                                 </constraints>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="93d-zN-AI5" userLabel="trollAttackButton">
-                                <rect key="frame" x="20" y="277" width="177" height="65"/>
+                                <rect key="frame" x="20" y="285" width="177" height="65"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="65" id="8e6-YJ-nOK"/>
                                     <constraint firstAttribute="width" constant="177" id="vMT-zi-Kly"/>
@@ -68,7 +68,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7hF-o9-feQ" userLabel="heroAttackButton">
-                                <rect key="frame" x="403" y="277" width="177" height="65"/>
+                                <rect key="frame" x="403" y="285" width="177" height="65"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="177" id="4de-OH-yK4"/>
                                     <constraint firstAttribute="height" constant="65" id="89L-P9-YjN"/>
@@ -80,7 +80,7 @@
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Attack" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4ok-IY-irQ" userLabel="trollAttackLabel">
-                                <rect key="frame" x="50" y="297" width="116" height="21"/>
+                                <rect key="frame" x="50" y="305" width="116" height="21"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="21" id="fZr-04-mAU"/>
                                     <constraint firstAttribute="width" constant="116" id="tsC-8T-qBq"/>
@@ -90,7 +90,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Attack" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gFz-B2-Vwg" userLabel="heroAttackLabel">
-                                <rect key="frame" x="433" y="297" width="116" height="21"/>
+                                <rect key="frame" x="433" y="305" width="116" height="21"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="21" id="EHv-2Z-hPU"/>
                                     <constraint firstAttribute="width" constant="116" id="GJZ-Fd-wYB"/>
@@ -165,7 +165,7 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="rUt-Cs-ORj" firstAttribute="bottom" secondItem="cVb-Bs-axs" secondAttribute="top" constant="-13" id="3O2-1M-hGI"/>
+                            <constraint firstItem="rUt-Cs-ORj" firstAttribute="bottom" secondItem="cVb-Bs-axs" secondAttribute="top" constant="-5" id="3O2-1M-hGI"/>
                             <constraint firstItem="rUt-Cs-ORj" firstAttribute="top" secondItem="93d-zN-AI5" secondAttribute="bottom" constant="25" id="4EL-4X-Z1z"/>
                             <constraint firstAttribute="trailing" secondItem="cVb-Bs-axs" secondAttribute="trailing" id="4wr-yG-Hsy"/>
                             <constraint firstItem="93d-zN-AI5" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="6Rs-aM-fXu"/>
@@ -190,7 +190,7 @@
                             <constraint firstItem="Qv4-wh-T9Y" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="VpP-gD-wvC"/>
                             <constraint firstItem="93d-zN-AI5" firstAttribute="leading" secondItem="4ok-IY-irQ" secondAttribute="trailing" constant="-146" id="XRx-Js-Qpu"/>
                             <constraint firstItem="ehw-Ng-5if" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="Yg1-2l-quf"/>
-                            <constraint firstItem="cVb-Bs-axs" firstAttribute="top" secondItem="zw9-d1-igQ" secondAttribute="bottom" constant="13" id="YwT-DN-eKf"/>
+                            <constraint firstItem="cVb-Bs-axs" firstAttribute="top" secondItem="zw9-d1-igQ" secondAttribute="bottom" constant="5" id="YwT-DN-eKf"/>
                             <constraint firstAttribute="trailing" secondItem="1va-8g-cBx" secondAttribute="trailing" id="cgV-BA-psO"/>
                             <constraint firstItem="1va-8g-cBx" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="dFq-nb-IAy"/>
                             <constraint firstItem="qgS-QI-O6g" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="hAd-Fs-QFX"/>
