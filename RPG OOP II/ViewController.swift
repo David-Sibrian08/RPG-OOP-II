@@ -40,6 +40,15 @@ class ViewController: UIViewController {
         // Do any additional setup after loading the view, typically from a nib.
         
         initializeSounds()
+        initializeGame()
+    }
+
+    override func didReceiveMemoryWarning() {
+        super.didReceiveMemoryWarning()
+        // Dispose of any resources that can be recreated.
+    }
+    
+    func initializeGame() {
         
         troll = Enemy(startingHP: 110, initialAttackPower: 16)
         hero = Hero(heroName: "Sir Nauticus", HP: 170, attackPower: 22)
@@ -48,13 +57,11 @@ class ViewController: UIViewController {
         
         gameMusic.play()
     }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
-    }
     
     @IBAction func trollAttackButtonPressed(sender: UIButton) {
+        if punchSound.playing {
+            punchSound.currentTime = 0
+        }
         punchSound.play()
         
         if hero.attemptAttack(troll.attackPower) {
@@ -76,6 +83,9 @@ class ViewController: UIViewController {
     }
     
     @IBAction func heroAttackButtonPressed(sender: UIButton) {
+        if attackSound.playing {
+            attackSound.currentTime = 0
+        }
         attackSound.play()
         
         if troll.attemptAttack(hero.attackPower) {
@@ -113,6 +123,17 @@ class ViewController: UIViewController {
     }
     
     @IBAction func restartButtonPressed(sender: UIButton) {
+        resetGame()
+        
+    }
+    
+    func resetGame() {
+        initializeGame()
+        
+        gameMusic.currentTime = 0      //restart the menu music
+        gameMusic.play()
+        
+        enableAndUnfadeButtons()
         
     }
     
@@ -132,6 +153,22 @@ class ViewController: UIViewController {
         heroAttackButton.alpha = 0.5
         
         restartButton.hidden = false
+    }
+    
+    func enableAndUnfadeButtons() {
+        trollAttackButton.enabled = true
+        trollAttackButton.alpha = 1.0
+        
+        heroAttackButton.enabled = true
+        heroAttackButton.alpha = 1.0
+        
+        restartButton.hidden = true
+        
+        trollHPLabel.hidden = false
+        trollImageView.alpha = 1.0
+        
+        heroHPLabel.hidden = false
+        heroImageView.alpha = 1.0
     }
     
     func initializeSounds() {
